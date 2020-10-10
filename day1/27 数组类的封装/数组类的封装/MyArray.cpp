@@ -34,7 +34,7 @@ MyArray::~MyArray(){
     
     cout << "析构函数调用" << endl;
     if (this->pAdress != NULL) {
-        delete [] this->pAdress;
+        delete [] this->pAdress; 
         this->pAdress = NULL;
     }
     
