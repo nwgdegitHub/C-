@@ -43,7 +43,6 @@ public:
 void test01(){
     Person p1("敌法",10);
     Person p2(p1);
-    
 }
 
 int main(int argc, const char * argv[]) {

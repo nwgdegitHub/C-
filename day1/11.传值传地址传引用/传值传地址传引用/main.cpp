@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
     int a = 10;
     int b = 20;
     
-//    swap01(a, b);
+    swap01(a, b);
     
 //    swap02(&a, &b);
     

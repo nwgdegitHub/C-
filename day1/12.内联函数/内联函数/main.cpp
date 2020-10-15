@@ -10,5 +10,6 @@
 
 int main(int argc, const char * argv[]) {
     
+    //写在class中的函数默认会加inline
     return 0;
 }

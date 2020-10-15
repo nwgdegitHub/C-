@@ -35,6 +35,5 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-//一般代码中出现const 就是说你要去修改他
 
 
