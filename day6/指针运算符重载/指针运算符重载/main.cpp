@@ -14,10 +14,6 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     test01();
     
-    
-    
-    
-    
     return 0;
 }
 
@@ -59,5 +55,5 @@ void test01(){
     //如果忘记释放，那么就会造成内存泄漏
 
     SmartPointer pointer(new Person(100));
-    pointer->PrintPerson();
+    pointer->PrintPerson(); //为什么可以直接调用？？？
 }
