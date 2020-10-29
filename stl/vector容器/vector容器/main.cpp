@@ -17,6 +17,7 @@ void printVector(vector<string> &v){
         cout << *it << " ";
     }
     cout << endl;
+    cout << "大小=" << v.size() << endl;
     cout << "容量=" << v.capacity() << endl;
     
 }
@@ -24,6 +25,8 @@ void printVector(vector<string> &v){
 int main(int argc, const char * argv[]) {
     // insert code here...
     cout << "Hello, World!\n";
+    
+    //动态数组 有size和capacity 元素可重复
     
     //*************数组习惯用法**************
     vector <int>v;
@@ -51,7 +54,7 @@ int main(int argc, const char * argv[]) {
     
      // 用另一个 vector 初始化一个 vector
     vector<int> ages(ivec);
-    vector< int > svec;
+    vector<int> svec;
      // 把一个 vector 拷贝给另一个 vector
     svec = ages;
     
@@ -73,6 +76,62 @@ int main(int argc, const char * argv[]) {
 //        cout << *it << endl;
     
     printVector(text);
+    
+//    swap收缩空间
+    vector<int> ivec2;
+    for (int ix = 0; ix < 100000; ++ix) {
+        ivec2.push_back(ix);
+    }
+    cout << "ivec2.capacity=" << ivec2.capacity() << endl;
+    cout << "ivec2.size=" << ivec2.size() << endl;
+    
+    ivec2.resize(3);
+    vector<int>(ivec2).swap(ivec2);
+    
+    cout << "ivec2.capacity=" << ivec2.capacity() << endl;
+    cout << "ivec2.size=" << ivec2.size() << endl;
+    
+    
+    //构造
+    vector<string>emptyV;//创建一个空的vector
+    
+    emptyV.reserve(3);//分配3个元素内存
+    
+    emptyV.push_back("z");
+    emptyV.push_back("a");
+    emptyV.push_back("a");
+    emptyV.push_back("???");
+    emptyV.push_back("y");
+    emptyV.push_back("a");
+    printVector(emptyV);
+    
+    swap(emptyV[0], emptyV[4]);//交换两个元素
+    printVector(emptyV);
+    
+    emptyV.back() = "!";//末尾追加
+    printVector(emptyV);
+    
+    emptyV.insert(find(emptyV.begin(), emptyV.end(),"???"),2,"all"); //插入
+    printVector(emptyV);
+    
+    //删除
+    emptyV.pop_back();
+    printVector(emptyV);
+    
+    //删除所有元素
+//    emptyV.erase(emptyV.begin(), emptyV.end());
+//    printVector(emptyV);
+    
+    //清除所有元素 清空容器 容量不会置0
+    emptyV.clear();
+    printVector(emptyV);
+    
+    
+    
+    
+    
+    
+    
     
     
     

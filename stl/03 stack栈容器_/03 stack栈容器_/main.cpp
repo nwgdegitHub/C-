@@ -15,7 +15,7 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    //先进后出 没有迭代器
+    //先进后出(弹夹) 没有迭代器
     stack<int>s;
     s.push(1);
     s.push(3);

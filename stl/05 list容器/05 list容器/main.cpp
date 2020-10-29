@@ -23,6 +23,8 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
+    
+    
     list<int> c0;
     list<int> c1(3);
     list<int> c2(5,2);
@@ -30,6 +32,7 @@ int main(int argc, const char * argv[]) {
     list<int> c5(c1.begin(),c1.end());
     
     //双向链表 而且是双向循环链表
+    //元素可重复
     list<int> myList;
     for (int i = 0; i<10; i++) {
         myList.push_back(i);

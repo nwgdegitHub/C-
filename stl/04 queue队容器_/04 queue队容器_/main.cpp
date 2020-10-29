@@ -13,7 +13,8 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    //先进先出
+//    先进先出(排队打饭)
+    
     queue<int>q;
     q.push(10); //往队尾添加元素
     q.push(20);

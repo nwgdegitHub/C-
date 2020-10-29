@@ -18,13 +18,14 @@ void printDeque(const deque<int>&d){
         cout << *it << ",";
     }
     cout << endl;
-    
+    cout << "size" << d.size() << endl;
 }
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    
+    //动态数组 类似于vector 先进先出
+    //https://www.cnblogs.com/ChinaHook/p/6985324.html
     
     deque<int>d;
     d.push_back(1); //1.尾插
@@ -51,6 +52,10 @@ int main(int argc, const char * argv[]) {
     
     cout << "back-----" << d.back() << endl;
     cout << "front-----" << d.front() << endl;
+    
+    d.assign(2,0); //赋值替换
+    printDeque(d);
+    
     
     //3.对应有头删 尾删
     d.pop_back();
