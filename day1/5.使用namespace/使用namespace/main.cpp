@@ -24,8 +24,9 @@ namespace A {
         int b = 2;
     }
     
-    
 }
+
+int a = 100;
 
 void A::Animal::func(){
     std::cout << "A 中的func \n";
@@ -43,5 +44,7 @@ int main(int argc, const char * argv[]) {
 //
     std::cout << A::B::b;
     //A::Animal::func;
+    
+    std::cout << ::a << std::endl;
     return 0;
 }

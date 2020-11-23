@@ -57,7 +57,7 @@ int main()
 //            cerr << e.what() << endl;
 //        }
     
-    vector<int> v(10);
+        vector<int> v(10);
         try {
             v.at(100) = 100;  //拋出 out_of_range 异常
         }
