@@ -24,8 +24,18 @@ int main(int argc, const char * argv[]) {
     int a[1024*1024];//栈区内存超过一定值会爆
     
     //一维数组
+    
     int *array=new int[10];
-    delete [] array;
+    cout<<array<<endl;
+    int intArr[10] = {1,2,3,4,5,6,7,8,9,10};
+    array = intArr;
+    cout<<array<<endl;
+//    0x1005bad10
+//    0x7ffeef7ff450
+    for (int i = 0;i<10 ;i++ ) {
+        cout<<array[i]<<endl;
+    }
+    //delete [] array; //为什么不能？new出来的才需要delete
     
     //二维数组
     int **array2;

@@ -20,9 +20,9 @@ public:
 //
 //    }
     
-//    Person():m_A(5),m_B(6){
-//
-//    }
+    Person():m_A(5),m_B(6){
+
+    }
     
 //    Person(int a,int b):m_A(a),m_B(b){
 //        
@@ -42,9 +42,9 @@ int main(int argc, const char * argv[]) {
 //    cout << "p2.m_A" << p2.m_A << endl;
 //    cout << "p2.m_B" << p2.m_B << endl;
     
-//    Person p3 = Person();
-//    cout << "p3.m_A" << p3.m_A << endl;
-//    cout << "p3.m_B" << p3.m_B << endl;
+    Person p3 = Person();
+    cout << "p3.m_A" << p3.m_A << endl;
+    cout << "p3.m_B" << p3.m_B << endl;
     
     return 0;
 }
