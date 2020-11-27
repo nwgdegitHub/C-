@@ -4,7 +4,7 @@
 //
 //  Created by udc on 2020/10/13.
 //  Copyright © 2020 udc. All rights reserved.
-//
+//。 virtual
 
 #include <iostream>
 using namespace std;
@@ -52,6 +52,5 @@ int main(int argc, const char * argv[]) {
     doSpeak(cat);
     
     
-    std::cout << "Hello, World!\n";
     return 0;
 }

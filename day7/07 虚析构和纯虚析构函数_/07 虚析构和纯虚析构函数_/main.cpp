@@ -19,12 +19,12 @@ public:
 //    }
     
 //加了virtual 会先调子类析构 再调基类析构
-//    virtual ~Animal(){
-//        cout << "Animal 虚析构\n" << endl;
-//    }
+    virtual ~Animal(){
+        cout << "Animal 虚析构\n" << endl;
+    }
     
     //纯虚析构 类内声明 类外实现
-    virtual ~Animal() = 0;
+//    virtual ~Animal() = 0;
     
     virtual void speak(){
         cout << "Animal speak\n" << endl;
@@ -32,9 +32,9 @@ public:
     
 };
 
-Animal:: ~Animal(){
-    cout << "Animal 纯虚析构\n" << endl;
-}
+//Animal:: ~Animal(){
+//    cout << "Animal 纯虚析构\n" << endl;
+//}
 
 class Cat:public Animal{
     
@@ -45,7 +45,7 @@ public:
         strcpy(this->m_Name, name);
     }
     
-    ~Cat(){
+    virtual ~Cat(){ //此处virtual可以不写，系统将会自动添加，建议写上
         
         cout << "Cat 析构\n" << endl;
         if (this->m_Name != NULL) {
