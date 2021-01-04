@@ -28,7 +28,7 @@ public:
 };
 
 class Person1{
-  
+
 public:
     void showPerson1(){
         cout << "Person1..." << endl;
@@ -79,9 +79,9 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     
     //类模版不支持 自动类型推导
-//    Person p("123",100);
+//    Person p1("123",100);
     
-    //显式指定类型
+    //必须显式指定类型
     Person<string,int> p("123456789",100);
     
     myClass<Person1>m;

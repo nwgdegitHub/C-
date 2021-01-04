@@ -18,5 +18,9 @@ int main(int argc, const char * argv[]) {
     
     cout << ::a << endl; //::表示作用域 前面不写任何内容表示全局作用域
     //return EXIT_SUCCESS;
+    
+    cout << "Hello" << endl << "你好";
+    
+    
     return 0;
 }
